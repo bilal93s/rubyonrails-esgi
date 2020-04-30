@@ -1,9 +1,8 @@
-puts "Veuillez saisir un entier"
-int1=gets.to_i
+i = 1
 
-i=0
+puts "entrez un entier"
 
-until i === int1
-    i+=2
-    puts i;
-end
+nb = gets.to_i
+sum = (i..nb).reduce(:+)
+
+puts "somme: #{sum}"
